@@ -77,4 +77,19 @@ public void insertUser(User... user){
         });
     }
 
+    public User getUserByUserName(String username) {
+        Future<User> future = GymLogDatabase.databaseWriteExecutor.submit(
+                new Callable<User>(){
+                    @Override
+                    public User call() throws Exception {
+                        return userDAO.getUserByUserName(username);
+                    }
+                });
+        try{
+            future.get();
+        }catch(InterruptedException | ExecutionException e){
+            Log.i(MainActivity.TAG, "Problem when getting all user by username");
+        }
+        return null;
+    }
 }
