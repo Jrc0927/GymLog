@@ -32,7 +32,7 @@
     <EditText
         android:id="@+id/exerciseInputEditText"
         android:layout_width="275dp"
-        android:layout_height="35dp"
+        android:layout_height="45dp"
         android:layout_marginStart="8dp"
         android:inputType="textAutoComplete"
         android:padding="8dp"
@@ -54,7 +54,7 @@
     <EditText
         android:id="@+id/weightInputEditText"
         android:layout_width="275dp"
-        android:layout_height="35dp"
+        android:layout_height="45dp"
         android:layout_marginStart="8dp"
         android:inputType="number|numberDecimal"
         android:padding="8dp"
@@ -76,7 +76,7 @@
     <EditText
         android:id="@+id/repInputEditText"
         android:layout_width="275dp"
-        android:layout_height="35dp"
+        android:layout_height="45dp"
         android:layout_marginStart="8dp"
         android:inputType="number"
         android:padding="8dp"
